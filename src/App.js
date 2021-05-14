@@ -22,6 +22,10 @@ import { ContextPage1, ContextPage2, ContextPage3 } from "./pages/Context/Contex
 // HOC
 import HocPage from "./pages/Hoc/HocPage"
 
+// RCForm
+import Form from "./pages/rc-form/Form"
+import RCForm from "./pages/rc-form/RCForm"
+
 function App() {
   // const [activeNum, setActiveNum] = useState(0);
   return (
@@ -48,7 +52,11 @@ function App() {
       <ContextPage3 /> */}
 
       {/* HOC高阶组件 */}
-      <HocPage />
+      {/* <HocPage /> */}
+
+      {/* RCForm */}
+      {/* <Form /> */}
+      <RCForm />
     </div>
   );
 }
