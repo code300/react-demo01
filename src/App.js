@@ -17,26 +17,38 @@ import OrderPage from "./pages/jd/OrderPage";
 import UserPage from "./pages/jd/UserPage";
 
 // Context
-import { ContextPage1, ContextPage2 } from "./pages/Context/ContextPage";
+import { ContextPage1, ContextPage2, ContextPage3 } from "./pages/Context/ContextPage";
+
+// HOC
+import HocPage from "./pages/Hoc/HocPage"
 
 function App() {
   // const [activeNum, setActiveNum] = useState(0);
   return (
     <div className="App">
+      {/* 组件类型--class组件 & function组件 */}
       {/* <ClassComponent />
       <FunctionComponent />
+
+      state数据同步和异步更新
       <SetStateSync />
       <SetStateAsync /> */}
       {/* <Home /> */}
       {/* <User /> */}
+
       {/* {activeNum === 0 && <IndexPage />}
       {activeNum === 1 && <CartPage />}
       {activeNum === 2 && <OrderPage />}
       {activeNum === 3 && <UserPage />}
       <BottomNav activeNum={activeNum} setActiveNum={setActiveNum} /> */}
 
-      <ContextPage1 />
+      {/* props & context组件传参 */}
+      {/* <ContextPage1 />
       <ContextPage2 />
+      <ContextPage3 /> */}
+
+      {/* HOC高阶组件 */}
+      <HocPage />
     </div>
   );
 }

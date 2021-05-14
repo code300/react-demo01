@@ -6,11 +6,6 @@ export default class home extends Component {
   render() {
     return (
       <Layout isShowTop={true} isShowBottom={false} title="首页">
-        {/* 元素形式 */}
-        {/* <div>
-          <h3>home</h3>
-        </div> */}
-
         {/* 类似vue的具名插槽 */}
         {/* 对象值--jsx形式 */}
         {{

@@ -19,9 +19,12 @@ export class ClassComponentPage1 extends Component {
 export class ClassComponentPage2 extends Component {
   // static作用：挂载到当前的类组件上
   static contextType = ThemeContext;
+  
   render() {
     const { themeColor } = this.context;
     console.log("this", this); //xiaogang-log
+    console.log('ThemeContext',ThemeContext); //xiaogang-log
+    console.log('context',this.context); //xiaogang-log
     return (
       <div>
         <h3 className={themeColor}>ClassComponentPage</h3>
