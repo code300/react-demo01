@@ -28,7 +28,7 @@ class RCForm extends Component {
 
 	submit = () => {
 		const { getFieldsValue, validateFields } = this.props.form;
-		// console.log("submit", getFieldsValue()); //xiaogang-log
+		console.log("submit", getFieldsValue()); //xiaogang-log
 		validateFields((err, value) => {
 			if (err) {
 				console.log("校验失败", err);

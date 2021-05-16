@@ -13,11 +13,11 @@
 
 // // uef
 // useEffect(() => {
-    
+
 // }, []);
 // // cwm
 // componentWillMount() {
-    
+
 // }
 // //cdm
 // componentDidMount() {
@@ -26,31 +26,31 @@
 // };
 // // cwrp
 // componentWillReceiveProps(nextProps) {
-    
+
 // }
 // // cwu
 // componentWillUpdate() {
-    
+
 // }
 // // scu
 // shouldComponentUpdate(nextProps, nextState) {
-    
+
 // }
 // // cdu
 // componentDidUpdate(prevProps, prevState) {
-    
+
 // }
 // // cdc
 // componentDidCatch(error, info) {
-    
+
 // }
 // // gds
 // static getDerivedStateFromProps(nextProps, prevState) {
-    
+
 // }
 // // gsbu
 // getSnapshotBeforeUpdate(prevProps, prevState) {
-    
+
 // }
 // // ss
 // this.setState({ :  });
@@ -61,19 +61,19 @@
 // // ren
 // render() {
 //     return (
-         
+
 //     );
 // }
 // rprop
 // class AP extends Component {
 //     state = { :  }
-//     render() { 
+//     render() {
 //         return this.props.render({
 //             : this.state.
 //         });
 //     }
 // }
- 
+
 // export default AP;
 // // hoc高阶组件
 // function () {
@@ -81,7 +81,7 @@
 //         constructor(props) {
 //             super(props);
 //         }
- 
+
 //         render() {
 //             return < {...this.props} />
 //         }
