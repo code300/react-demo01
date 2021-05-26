@@ -32,12 +32,17 @@ import Form from "./pages/rc-form/Form";
 import RCForm from "./pages/rc-form/RCForm";
 
 // antdForm
-import { AntdFormPage, AntdFormPage2 } from "./pages/AntdForm/AntdFormPage";
+import { AntdFormPage, AntdFormPage2 } from "./pages/Form/AntdFormPage";
+import { RCFieldForm, RCFieldForm2 } from "./pages/Form/RCFieldForm";
 
 //Redux
 import ReduxPage from "./pages/Redux/Redux/ReduxPage";
 import MyReduxPage from "./pages/Redux/MyRedux/MyReduxPage";
 import ConsumerPage from "./pages/Context/ConsumerPage";
+import ReactReduxPage from "./pages/Redux/ReactRedux/ReactReduxPage";
+
+// react-router
+import ReactRouter from "./pages/ReactRouterDom/RoutePage";
 
 function App() {
 	// const [activeNum, setActiveNum] = useState(0);
@@ -72,12 +77,18 @@ function App() {
 			{/* <Form /> */}
 			{/* <RCForm /> */}
 
-			<AntdFormPage />
-			<AntdFormPage2 />
+			{/* <AntdFormPage />
+			<AntdFormPage2 /> */}
+			{/* <RCFieldForm />
+			<RCFieldForm2 /> */}
 
 			{/* Redux */}
 			{/* <ReduxPage />
 			<MyReduxPage /> */}
+			{/* <ReactReduxPage /> */}
+
+			{/* ReactRouter */}
+			<ReactRouter />
 		</div>
 	);
 }
