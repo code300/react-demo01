@@ -20,7 +20,12 @@ import WelcomePage from "./WelcomePage";
 // 	Prompt,
 // } from "react-router-dom";
 
-import { BrowserRouter as Router, Route, Link } from "../ReactRouterDomMy";
+import {
+	BrowserRouter as Router,
+	Route,
+	Link,
+	Switch,
+} from "../ReactRouterDomMy";
 
 export default function RoutePage(props) {
 	return (
@@ -29,20 +34,19 @@ export default function RoutePage(props) {
 				<Link to="/">首页</Link>
 				<Link to="/user">用户中心</Link>
 				<Link to="/login">登录</Link>
-				{/* <Link to="/product/123">商品</Link> */}
+				<Link to="/product/123">商品</Link>
 
 				{/* exact精确匹配 正则校验  */}
-				{/* <Switch> */}
-				<Route exact path="/" component={HomePage} />
-				<Route path="/user" component={UserPage} />
-				<Route path="/login" component={LoginPage} />
-				<Route path="/product/:id" component={ProductPage} />
-				{/* <Route path="/product/:id" component={ProductPage} /> */}
-				<Route path="/welcome" component={WelcomePage} />
-
-				{/* 不写path值 默认匹配 */}
-				<Route component={_404Page} />
-				{/* </Switch> */}
+				<Switch>
+					<Route exact path="/" component={HomePage} />
+					<Route path="/user" component={UserPage} />
+					<Route path="/login" component={LoginPage} />
+					<Route path="/product/:id" component={ProductPage} />
+					{/* <Route path="/product/:id" component={ProductPage} /> */}
+					<Route path="/welcome" component={WelcomePage} />
+					{/* 不写path值 默认匹配 且path取match的默认path */}
+					<Route component={_404Page} />
+				</Switch>
 			</Router>
 		</div>
 	);
