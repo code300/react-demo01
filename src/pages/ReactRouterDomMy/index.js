@@ -5,4 +5,20 @@ import Switch from "./Switch";
 import Redirect from "./Redirect";
 import withRouter from "./withRouter";
 
-export { BrowserRouter, Link, Route, Switch, Redirect, withRouter };
+import { useRouteMatch } from "./Hooks";
+import { useLocation } from "./Hooks";
+import { useHistory } from "./Hooks";
+import { useParams } from "./Hooks";
+
+export {
+	BrowserRouter,
+	Link,
+	Route,
+	Switch,
+	Redirect,
+	withRouter,
+	useRouteMatch,
+	useHistory,
+	useLocation,
+	useParams,
+};

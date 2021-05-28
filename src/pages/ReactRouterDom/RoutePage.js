@@ -14,15 +14,15 @@ import WelcomePage from "./WelcomePage";
 // 	Link,
 // 	Switch,
 // 	Redirect,
+// 	withRouter,
 // 	useRouteMatch,
 // 	useHistory,
 // 	useLocation,
 // 	useParams,
-// 	withRouter,
 // 	Prompt,
 // } from "react-router-dom";
 
-// 手写实现的
+// 手写实现的;
 import {
 	BrowserRouter as Router,
 	Route,
@@ -30,6 +30,10 @@ import {
 	Switch,
 	Redirect,
 	withRouter,
+	useRouteMatch,
+	useHistory,
+	useLocation,
+	useParams,
 } from "../ReactRouterDomMy";
 
 export default function RoutePage(props) {
