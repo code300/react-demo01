@@ -30,6 +30,7 @@ import {
 	Switch,
 	Redirect,
 	withRouter,
+	Prompt,
 	useRouteMatch,
 	useHistory,
 	useLocation,

@@ -8,6 +8,7 @@ import React, { Component } from "react";
 // 	useLocation,
 // 	useParams,
 // 	withRouter,
+// 	Prompt,
 // } from "react-router-dom";
 // 手写的
 import {
@@ -18,7 +19,9 @@ import {
 	useHistory,
 	useLocation,
 	useParams,
+	Prompt,
 } from "../ReactRouterDomMy";
+
 import DetailPage from "./DetailPage";
 
 // 动态路由--class组件
@@ -79,22 +82,45 @@ import DetailPage from "./DetailPage";
 // export default ProductPage;
 
 // 动态路由--func组件--HOOKS取参
-export default function ProductPage(props) {
-	console.log("props:{history,location,match}", props); //xiaogang-log
+// export default function ProductPage(props) {
+// 	console.log("props:{history,location,match}", props); //xiaogang-log
 
-	const match = useRouteMatch();
-	const history = useHistory();
-	const location = useLocation();
-	const params = useParams();
+// 	const match = useRouteMatch();
+// 	const history = useHistory();
+// 	const location = useLocation();
+// 	const params = useParams();
 
-	const { url } = match;
-	const { id } = params;
-	return (
-		<div>
-			<h3>ProductPage</h3>
-			<p>{id}</p>
-			<Link to={url + "/detail"}>详情页</Link>
-			<Route path={url + "/detail"} component={DetailPage} />
-		</div>
-	);
+// 	const { url } = match;
+// 	const { id } = params;
+// 	return (
+// 		<div>
+// 			<h3>ProductPage</h3>
+// 			<p>{id}</p>
+// 			<Link to={url + "/detail"}>详情页</Link>
+// 			<Route path={url + "/detail"} component={DetailPage} />
+// 		</div>
+// 	);
+// }
+
+export default class ProductPage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { confirm: true };
+	}
+	render() {
+		return (
+			<div>
+				<h3>ProductPage</h3>
+				<button
+					onClick={() => {
+						this.setState({ confirm: !this.state.confirm });
+					}}
+				>
+					change
+				</button>
+				<Link to="/">go home</Link>
+				<Prompt when={this.state.confirm} message="确定吗？"></Prompt>
+			</div>
+		);
+	}
 }

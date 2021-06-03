@@ -10,6 +10,8 @@ import { useLocation } from "./Hooks";
 import { useHistory } from "./Hooks";
 import { useParams } from "./Hooks";
 
+import Prompt from "./Prompt";
+
 export {
 	BrowserRouter,
 	Link,
@@ -21,4 +23,5 @@ export {
 	useHistory,
 	useLocation,
 	useParams,
+	Prompt,
 };

@@ -7,6 +7,12 @@ export default class LifeCycle extends Component {
 		}
 	}
 
+	componentWillUnmount() {
+		if (this.props.onUnmount) {
+			this.props.onUnmount.call(this, this);
+		}
+	}
+
 	render() {
 		return null;
 	}

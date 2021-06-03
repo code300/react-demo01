@@ -8,11 +8,12 @@ export default class Redirect extends Component {
 		return (
 			<RouterContext.Consumer>
 				{context => {
-					const { to, push = false } = this.props;
+					const { history, push = false } = context;
+					const { to } = this.props;
 					return (
 						<LifeCycle
 							onMount={() => {
-								push ? context.history.push(to) : context.history.replace(to);
+								push ? history.push(to) : history.replace(to);
 							}}
 						/>
 					);
