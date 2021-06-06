@@ -9,7 +9,7 @@ import User from "./pages/jd/User";
 
 // jd
 
-import BottomNav from "./components/BottomNav";
+import BottomNav from "./components/Menu";
 
 import IndexPage from "./pages/jd/IndexPage";
 import CartPage from "./pages/jd/CartPage";
