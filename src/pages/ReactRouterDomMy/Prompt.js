@@ -8,7 +8,7 @@ export default function Prompt(message, when = true) {
 			{context => {
 				if (when) {
 					let method = context.history.block;
-					// console.log("context", context); //xiaogang-log
+					console.log("context", context); //xiaogang-log
 					// console.log("message", message); //xiaogang-log
 					return (
 						<LifeCycle

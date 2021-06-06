@@ -42,7 +42,7 @@ import ConsumerPage from "./pages/Context/ConsumerPage";
 import ReactReduxPage from "./pages/Redux/ReactRedux/ReactReduxPage";
 
 // react-router
-import ReactRouter from "./pages/ReactRouterDom/RoutePage";
+import Routes from "./pages/Routes";
 
 function App() {
 	// const [activeNum, setActiveNum] = useState(0);
@@ -88,9 +88,13 @@ function App() {
 			{/* <ReactReduxPage /> */}
 
 			{/* ReactRouter */}
-			<ReactRouter />
+			<Routes />
 		</div>
 	);
 }
 
 export default App;
+
+// export default function App(props) {
+// 	return <Routes />;
+// }

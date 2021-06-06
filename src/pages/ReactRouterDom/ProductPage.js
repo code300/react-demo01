@@ -1,28 +1,28 @@
 import React, { Component } from "react";
 // 官方的
-// import {
-// 	Link,
-// 	Route,
-// 	useRouteMatch,
-// 	useHistory,
-// 	useLocation,
-// 	useParams,
-// 	withRouter,
-// 	Prompt,
-// } from "react-router-dom";
-// 手写的
 import {
 	Link,
 	Route,
-	withRouter,
 	useRouteMatch,
 	useHistory,
 	useLocation,
 	useParams,
+	withRouter,
 	Prompt,
-} from "../ReactRouterDomMy";
+} from "react-router-dom";
+// 手写的
+// import {
+// 	Link,
+// 	Route,
+// 	withRouter,
+// 	useRouteMatch,
+// 	useHistory,
+// 	useLocation,
+// 	useParams,
+// 	Prompt,
+// } from "../ReactRouterDomMy";
 
-import DetailPage from "./DetailPage";
+import Cart from "./Cart";
 
 // 动态路由--class组件
 // export default class ProductPage extends Component {
@@ -36,7 +36,7 @@ import DetailPage from "./DetailPage";
 // 				<h3>ProductPage</h3>
 // 				<p>{id}</p>
 // 				<Link to={url + "/detail"}>详情页</Link>
-// 				<Route path={url + "/detail"} component={DetailPage} />
+// 				<Route path={url + "/detail"} component={Cart} />
 // 			</div>
 // 		);
 // 	}
@@ -53,7 +53,7 @@ import DetailPage from "./DetailPage";
 // 			<h3>ProductPage</h3>
 // 			<p>{id}</p>
 // 			<Link to={url + "/detail"}>详情页</Link>
-// 			<Route path={url + "/detail"} component={DetailPage} />
+// 			<Route path={url + "/detail"} component={Cart} />
 // 		</div>
 // 	);
 // }
@@ -74,7 +74,7 @@ import DetailPage from "./DetailPage";
 // 				<h3>ProductPage</h3>
 // 				<p>{id}</p>
 // 				<Link to={url + "/detail"}>详情页</Link>
-// 				<Route path={url + "/detail"} component={DetailPage} />
+// 				<Route path={url + "/detail"} component={Cart} />
 // 			</div>
 // 		);
 // 	}
@@ -97,7 +97,7 @@ import DetailPage from "./DetailPage";
 // 			<h3>ProductPage</h3>
 // 			<p>{id}</p>
 // 			<Link to={url + "/detail"}>详情页</Link>
-// 			<Route path={url + "/detail"} component={DetailPage} />
+// 			<Route path={url + "/detail"} component={Cart} />
 // 		</div>
 // 	);
 // }
